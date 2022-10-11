@@ -1,7 +1,33 @@
 .h1 {
     margin: 70px;
+    color: darkcyan;
 }
 
 .chart {
     margin: 50px 450px;
+}
+
+
+/* Tab View */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .h1 {
+        margin: 80px;
+    }
+
+    .chart {
+        margin: 100px 100px;
+    }
+}
+
+/* Mobile View  */
+@media screen and (max-width: 576px) {
+    .h1 {
+        margin: 90px 0px;
+
+    }
+
+    .chart {
+        margin: 0px 0px;
+    }
+
 }

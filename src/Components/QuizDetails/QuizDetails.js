@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Questions from '../Questions/Questions';
+import './QstnDetails.css'
 
 const QuizDetails = () => {
     const question = useLoaderData();
@@ -12,7 +13,7 @@ const QuizDetails = () => {
 
     return (
         <div>
-            <h1>Quiz of {name}</h1>
+            <h1 className='Question-name'>Quiz of {name}</h1>
             {
                 questionsAll.map(qstn => <Questions
                     key={qstn.id}

@@ -5,13 +5,16 @@
     width: 540px;
     display: flex;
     justify-content: center;
+    color: black;
 
 
 
 }
 
+
+
 .btn-option {
-    border: 2px solid blue;
+    border: 2px solid darkcyan;
     margin: 30px;
     padding: 40px;
 
@@ -27,6 +30,9 @@
 }
 
 .btn-option:hover {
-    background-color: blueviolet;
+    background-color: darkcyan;
+
 
 }
+
+@media screen and (min-width: 577px) and (max-width: 992px) {}

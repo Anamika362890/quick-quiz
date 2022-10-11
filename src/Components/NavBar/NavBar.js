@@ -21,6 +21,8 @@ const NavBar = () => {
             <div className='nav-right'>
                 <nav className=''>
                     <NavLink to='/home' className={({ isActive }) =>
+                        isActive ? 'one' : undefined}>Home</NavLink>
+                    <NavLink to='/topics' className={({ isActive }) =>
                         isActive ? 'one' : undefined}>Topics</NavLink>
                     <NavLink to='/statics' className={({ isActive }) =>
                         isActive ? 'one' : undefined}>Static</NavLink>

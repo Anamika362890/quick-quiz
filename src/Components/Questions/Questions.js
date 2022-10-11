@@ -2,6 +2,9 @@ import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React, { useState } from 'react';
 import Option from '../Options/Option';
 import './Question.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Questions = ({ qstn }) => {
@@ -13,10 +16,12 @@ const Questions = ({ qstn }) => {
 
 
     return (
-        <div>
+        <div className='question-container'>
 
 
             <h2 className='question'>Quiz  : {question.slice(3, -4)} </h2>
+            <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+
 
             <div className='option-container'>
                 {
