@@ -7,6 +7,9 @@ const Quiz = ({ quiz }) => {
         <div className='quiz'>
             <img src={logo} />
             <h1>{name}</h1>
+            <p>Total Question: {total}</p>
+            <button className='btn-start'>Start Quiz</button>
+
 
 
         </div>

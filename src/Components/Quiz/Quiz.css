@@ -1,9 +1,22 @@
 .quiz {
     border: 1px solid lightblue;
     border-radius: 10px;
-    padding-bottom: 20px;
+
+
 }
 
 .quiz img {
-    height: 250px;
+    max-width: 350px;
+    background-color: rgb(177, 222, 207);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.btn-start {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
 }
