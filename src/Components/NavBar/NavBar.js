@@ -20,9 +20,12 @@ const NavBar = () => {
             </div>
             <div className='nav-right'>
                 <nav className=''>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/'>Topics</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/statics'>Static</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/blog'>Blog</NavLink>
+                    <NavLink to='/home' className={({ isActive }) =>
+                        isActive ? 'one' : undefined}>Topics</NavLink>
+                    <NavLink to='/statics' className={({ isActive }) =>
+                        isActive ? 'one' : undefined}>Static</NavLink>
+                    <NavLink to='/blog' className={({ isActive }) =>
+                        isActive ? 'one' : undefined}>Blog</NavLink>
                 </nav>
             </div>
         </div>

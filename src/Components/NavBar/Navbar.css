@@ -38,6 +38,10 @@
     color: red;
 }
 
-.active {
-    background-color: aquamarine;
+.one {
+    background-color: khaki;
+}
+
+.two {
+    background-color: darkorchid;
 }
