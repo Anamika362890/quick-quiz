@@ -20,8 +20,8 @@ const NavBar = () => {
             </div>
             <div className='nav-right'>
                 <nav className=''>
-                    <Link to='/'>Home</Link>
-                    <Link to='/topics'>Topics</Link>
+                    <Link to='/'>Topics</Link>
+
                     <Link to='/statics'>Static</Link>
                     <Link to='/blog'>Blog</Link>
                 </nav>

@@ -5,6 +5,7 @@ import Quiz from '../Quiz/Quiz';
 import './Home.css'
 
 const Home = () => {
+
     const quizze = useLoaderData();
     const quizzes = quizze.data;
 
@@ -16,6 +17,8 @@ const Home = () => {
                     quizzes.map(quiz => <Quiz
                         key={quiz.id}
                         quiz={quiz}
+
+
                     ></Quiz>)
                 }
             </div>

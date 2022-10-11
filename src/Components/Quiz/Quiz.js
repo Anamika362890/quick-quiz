@@ -1,14 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Quiz.css'
 
 const Quiz = ({ quiz }) => {
-    const { name, logo, total } = quiz;
+
+    const { id, name, logo, total } = quiz;
+    const navigate = useNavigate();
+    const handleStartQuiz = () => {
+        navigate(`/questions/${id}`)
+
+    }
     return (
         <div className='quiz'>
             <img src={logo} />
             <h1>{name}</h1>
             <p>Total Question: {total}</p>
-            <button className='btn-start'>Start Quiz</button>
+            <button onClick={handleStartQuiz} className='btn-start'>Start Quiz</button>
 
 
 

@@ -37,7 +37,7 @@ function App() {
           element: <Blog></Blog>
         },
         {
-          path: "/topics",
+          path: "/questions",
 
           element: <Topics></Topics>
         },
@@ -45,6 +45,7 @@ function App() {
       ]
 
     },
+    { path: '*', element: <div>This route is not found</div> }
   ]);
   return (
     <div className="App">
