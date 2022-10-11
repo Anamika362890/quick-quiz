@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Option from '../Options/Option';
 import './Question.css'
 
-const Questions = ({ qstn, correctAnswer }) => {
+const Questions = ({ qstn, }) => {
 
     const { question } = qstn;
     console.log(qstn.options);
@@ -14,8 +14,8 @@ const Questions = ({ qstn, correctAnswer }) => {
         <div>
 
 
-            <h1>Quiz  : {question} </h1>
-            <h1>{correctAnswer}</h1>
+            <h2 className='question'>Quiz  : {question} </h2>
+
             <div className='option-container'>
                 {
                     options.map(option => <Option

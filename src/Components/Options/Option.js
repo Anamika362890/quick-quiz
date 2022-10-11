@@ -7,9 +7,13 @@ const Option = ({ option }) => {
             <div >
                 <div className='options'>
 
-                    <input type="radio" />
+                    <div>
+                        <input type="radio" />
+                    </div>
 
-                    <label >{option}</label>
+                    <div>
+                        <label className='option-level'>{option}</label>
+                    </div>
                 </div>
 
             </div>

@@ -1,3 +1,8 @@
+.question {
+    font-size: 30px;
+    margin: 60px 70px;
+}
+
 .option-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

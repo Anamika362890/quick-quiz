@@ -30,6 +30,7 @@ function App() {
         {
           path: "/statics",
 
+
           element: <Statics></Statics>
         },
         {
