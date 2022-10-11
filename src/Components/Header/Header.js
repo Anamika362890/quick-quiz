@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import picture from './quiz.jpg'
+import picture from './quiz.png'
 
 const Header = () => {
     return (

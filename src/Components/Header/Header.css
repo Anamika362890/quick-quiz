@@ -1,16 +1,17 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px;
-
+    padding: 20px;
+    background-color: honeydew;
 }
 
 .header img {
-    width: 722px;
+    width: 350px;
 }
 
 .header-text {
-    margin: 60px;
+    margin: auto;
+
 }
 
 .header-text h1 {
