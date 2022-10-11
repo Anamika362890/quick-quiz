@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Option from '../Options/Option';
+import './Question.css'
 
 const Questions = ({ qstn, correctAnswer }) => {
 
@@ -15,11 +16,13 @@ const Questions = ({ qstn, correctAnswer }) => {
 
             <h1>Quiz  : {question} </h1>
             <h1>{correctAnswer}</h1>
-            {
-                options.map(option => <Option
-                    option={option}
-                ></Option>)
-            }
+            <div className='option-container'>
+                {
+                    options.map(option => <Option
+                        option={option}
+                    ></Option>)
+                }
+            </div>
 
 
         </div>

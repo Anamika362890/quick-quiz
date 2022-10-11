@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const NavBar = () => {
@@ -20,10 +20,9 @@ const NavBar = () => {
             </div>
             <div className='nav-right'>
                 <nav className=''>
-                    <Link to='/'>Topics</Link>
-
-                    <Link to='/statics'>Static</Link>
-                    <Link to='/blog'>Blog</Link>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/'>Topics</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/statics'>Static</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/blog'>Blog</NavLink>
                 </nav>
             </div>
         </div>
