@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: #232323;
     padding: 10px;
 
 }
@@ -10,6 +10,7 @@
     display: flex;
     margin-left: 20px;
     align-items: center;
+    color: aliceblue;
 
 }
 
@@ -17,7 +18,12 @@
 
     font-size: 50px;
     margin-right: 20px;
+    color: aliceblue;
 
+}
+
+.quick {
+    color: darkcyan;
 }
 
 .nav-right {
@@ -28,20 +34,23 @@
 
 .nav-right a {
     text-decoration: none;
-    color: green;
+    color: aliceblue;
     margin-right: 50px;
     font-size: 20px;
+    font-weight: 500;
 
 }
 
 .nav-right a:hover {
-    color: red;
+    color: rgba(240, 255, 255, 0.696);
 }
 
 .one {
-    background-color: khaki;
-}
 
-.two {
-    background-color: darkorchid;
+    background-color: darkcyan;
+    padding: 6px 6px 8px 6px;
+    border-radius: 10px;
+
+
+
 }

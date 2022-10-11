@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Option from '../Options/Option';
 import './Question.css'
 
+
 const Questions = ({ qstn }) => {
 
     const { question, correctAnswer } = qstn;
@@ -15,7 +16,7 @@ const Questions = ({ qstn }) => {
         <div>
 
 
-            <h2 className='question'>Quiz  : {question} </h2>
+            <h2 className='question'>Quiz  : {question.slice(3, -4)} </h2>
 
             <div className='option-container'>
                 {

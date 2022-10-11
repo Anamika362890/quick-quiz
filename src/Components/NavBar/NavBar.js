@@ -13,7 +13,7 @@ const NavBar = () => {
                     <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
                 </div>
                 <div>
-                    <h2>Quick Quiz</h2>
+                    <h1><span className='quick'>Quick </span> Quiz</h1>
                 </div>
 
 

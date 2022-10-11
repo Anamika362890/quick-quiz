@@ -1,22 +1,48 @@
 .quiz {
-    border: 1px solid lightblue;
+    border: 2px solid darkcyan;
     border-radius: 10px;
+    background-color: aliceblue;
 
 
 }
 
 .quiz img {
     max-width: 350px;
-    background-color: rgb(177, 222, 207);
+    background-color: gainsboro;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+.quiz h1 {
+    color: darkcyan;
+}
+
+.quiz p {
+    font-size: 20px;
 }
 
 .btn-start {
     font-size: 25px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 17px;
+    border: 1px solid snow;
     border-radius: 10px;
     margin-bottom: 20px;
+    background-color: darkcyan;
+
+    color: aliceblue;
+
+}
+
+.btn-start:hover {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 17px;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+
+    color: darkcyan;
 
 }
