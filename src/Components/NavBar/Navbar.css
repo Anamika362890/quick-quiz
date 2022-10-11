@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.nav-left {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+
+}
+
+.nav-icon {
+
+    font-size: 50px;
+    margin-right: 20px;
+
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: green;
+    margin-right: 50px;
+    font-size: 20px;
+
+}

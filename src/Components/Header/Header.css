@@ -1,0 +1,23 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+
+}
+
+.header img {
+    width: 722px;
+}
+
+.header-text {
+    margin: 60px;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-text p {
+    font-size: 20px;
+}
