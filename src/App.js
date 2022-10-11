@@ -7,6 +7,7 @@ import Home from './Components/Home/Home'
 import Statics from './Components/Statics/Statics';
 import Blog from './Components/Blog/Blog';
 import Topics from './Components/Topics/Topics';
+import QuizDetails from './Components/QuizDetails/QuizDetails';
 
 
 function App() {
@@ -41,6 +42,12 @@ function App() {
 
           element: <Topics></Topics>
         },
+        {
+          path: '/questions/:quizId',
+          loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
+          element: <QuizDetails></QuizDetails>
+        }
+
 
       ]
 

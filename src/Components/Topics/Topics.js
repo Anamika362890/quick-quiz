@@ -6,6 +6,7 @@ const Topics = () => {
     console.log(question.data);
     return (
         <div>
+            <h1>qstn</h1>
 
         </div>
     );
