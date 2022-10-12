@@ -1,3 +1,20 @@
+Project Name :Quick Quiz Project
+Live Website Link:
+Feature Of This Project:
+ -This project has Home Page, Topics Page, Statistics Page & Blog Page.
+ -All These pages there is a common navbar.
+ -In-Home Page, there is a header part with a picture & next, there is a quiz topic part. From here users can perform these quizzes.
+ -Topics part contains the same feature without a header.
+ -Statistics page contains a chart of this project total questions & topic,
+also in the blog part there is some question.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
