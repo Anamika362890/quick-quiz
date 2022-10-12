@@ -8,6 +8,7 @@ import Statics from './Components/Statics/Statics';
 import Blog from './Components/Blog/Blog';
 import Topics from './Components/Topics/Topics';
 import QuizDetails from './Components/QuizDetails/QuizDetails';
+import Route404 from './Components/Route404/Route404';
 
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
       ]
 
     },
-    { path: '*', element: <div>This route is not found</div> }
+    { path: '*', element: <Route404></Route404> }
   ]);
   return (
     <div className="App">

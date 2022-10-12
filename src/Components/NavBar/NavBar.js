@@ -42,6 +42,7 @@ const NavBar = () => {
                         isActive ? 'one' : undefined}>Static</NavLink>
                     <NavLink to='/blog' className={({ isActive }) =>
                         isActive ? 'one' : undefined}>Blog</NavLink>
+
                 </nav>
             </div>
         </div>

@@ -1,0 +1,38 @@
+.route h1 {
+    font-size: 200px;
+    margin: 0px;
+    padding: 0px;
+    color: darkcyan;
+}
+
+.route p {
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+}
+
+.btn-route {
+    padding: 40px;
+    margin: 40px;
+    font-size: 40px;
+    background-color: darkcyan;
+    border-radius: 25px;
+    border: 2px solid white;
+
+}
+
+.btn-route a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-route:hover {
+
+    padding: 40px;
+    margin: 40px;
+    font-size: 40px;
+    background-color: rgb(11, 99, 99);
+    border-radius: 25px;
+    border: 2px solid rgb(54, 188, 188);
+}
