@@ -19,7 +19,7 @@ const NavBar = () => {
 
             </div>
             <div className='nav-right'>
-                <nav className=''>
+                <nav className='nav-button'>
                     <NavLink to='/home' className={({ isActive }) =>
                         isActive ? 'one' : undefined}>Home</NavLink>
                     <NavLink to='/topics' className={({ isActive }) =>

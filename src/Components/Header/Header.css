@@ -28,3 +28,37 @@
     font-weight: 500;
     ;
 }
+
+/* Tablet View */
+@media screen and (max-width: 576px) {
+    .header {
+        display: grid;
+        grid-template-columns: none;
+        padding: 0px;
+        background-color: gainsboro;
+    }
+
+    .header img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .header-text {
+        margin: 0px;
+        color: darkcyan;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+    .header-text p {
+        font-size: 25px;
+        color: ghostwhite;
+        margin-left: 0px;
+        font-weight: 500;
+        ;
+    }
+}
