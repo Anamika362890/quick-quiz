@@ -4,6 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
 const Option = ({ option, correctAnswer }) => {
     const handleClickButton = () => {
         if (option === correctAnswer) {
@@ -26,7 +28,9 @@ const Option = ({ option, correctAnswer }) => {
                     </button>
                     <ToastContainer />
 
+
                 </div>
+
 
             </div>
 

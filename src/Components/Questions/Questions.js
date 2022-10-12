@@ -3,15 +3,17 @@ import React, { useState } from 'react';
 import Option from '../Options/Option';
 import './Question.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeLowVision } from '@fortawesome/free-solid-svg-icons';
 
 
 
 const Questions = ({ qstn }) => {
+    const [show, setShow] = useState(false);
 
     const { question, correctAnswer } = qstn;
-    console.log(qstn);
+
     const options = qstn.options;
+
 
 
 
@@ -20,7 +22,8 @@ const Questions = ({ qstn }) => {
 
 
             <h2 className='question'>Quiz  : {question.slice(3, -4)} </h2>
-            <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+
+
 
 
             <div className='option-container'>
@@ -33,7 +36,22 @@ const Questions = ({ qstn }) => {
                 }
             </div>
 
+            <div>
+                <div className='right-answer'>
+                    {
+                        show ? <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon' icon={faEyeLowVision}></FontAwesomeIcon>
+                            Click To See Show Correct Answer</h4> : <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon' icon={faEye}></FontAwesomeIcon>
+                            Correct Answer  :  {correctAnswer}</h4>
+                    }
 
+                </div>
+
+
+
+
+
+
+            </div>
         </div >
     );
 };
