@@ -1,10 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faCross, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
+import { useState } from 'react';
+
+
+
+
 
 const NavBar = () => {
+    const [navbar, setNavbar] = useState(false);
     return (
         <div className='nav'>
 
@@ -19,7 +25,15 @@ const NavBar = () => {
 
             </div>
             <div className='nav-right'>
-                <nav className='nav-button'>
+                <div onClick={() => setNavbar(!navbar)}>
+                    {
+                        navbar ? <FontAwesomeIcon className='icon' icon={faXmark}></FontAwesomeIcon>
+                            : <FontAwesomeIcon className='icon' icon={faBars}></FontAwesomeIcon>
+
+                    }
+
+                </div>
+                <nav className={`nav-button ${navbar ? 'open' : 'close'}`}>
                     <NavLink to='/home' className={({ isActive }) =>
                         isActive ? 'one' : undefined}>Home</NavLink>
                     <NavLink to='/topics' className={({ isActive }) =>

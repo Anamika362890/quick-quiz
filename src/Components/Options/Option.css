@@ -1,5 +1,5 @@
 .option-level {
-    margin-left: 20px;
+
     font-size: 20px;
     font-weight: bold;
     width: 540px;
@@ -15,7 +15,7 @@
 
 .btn-option {
     border: 2px solid darkcyan;
-    margin: 30px;
+
     padding: 40px;
 
     border-radius: 20px;
@@ -35,4 +35,29 @@
 
 }
 
-@media screen and (min-width: 577px) and (max-width: 992px) {}
+@media screen and (max-width: 576px) {
+    .option-level {
+        margin-left: 0px;
+
+        width: 240px;
+
+
+
+
+
+    }
+
+    .btn-option {
+        border: 2px solid darkcyan;
+        margin-top: 30px;
+        padding: 50px;
+
+
+
+
+
+
+
+    }
+
+}

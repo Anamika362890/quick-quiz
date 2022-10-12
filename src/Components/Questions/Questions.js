@@ -8,7 +8,7 @@ import { faEye, faEyeLowVision } from '@fortawesome/free-solid-svg-icons';
 
 
 const Questions = ({ qstn }) => {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
 
     const { question, correctAnswer } = qstn;
 
@@ -39,8 +39,8 @@ const Questions = ({ qstn }) => {
             <div>
                 <div className='right-answer'>
                     {
-                        show ? <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon' icon={faEyeLowVision}></FontAwesomeIcon>
-                            Click To See Show Correct Answer</h4> : <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon' icon={faEye}></FontAwesomeIcon>
+                        show ? <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon-eye' icon={faEyeLowVision}></FontAwesomeIcon>
+                            Click To See Show Correct Answer</h4> : <h4><FontAwesomeIcon onClick={() => setShow(!show)} className='icon-eye' icon={faEye}></FontAwesomeIcon>
                             Correct Answer  :  {correctAnswer}</h4>
                     }
 

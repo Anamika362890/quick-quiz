@@ -10,16 +10,20 @@ const Topics = () => {
     return (
 
 
-        <div className='quiz-container'>
-            {
-                quizzes.map(quiz => <Quiz
-                    key={quiz.id}
-                    quiz={quiz}
+        <div>
+            <h2 className='color'>Select A Topic From Here</h2>
+            <div className='quiz-container'>
+
+                {
+                    quizzes.map(quiz => <Quiz
+                        key={quiz.id}
+                        quiz={quiz}
 
 
-                ></Quiz>)
-            }
+                    ></Quiz>)
+                }
 
+            </div>
         </div>
     );
 };

@@ -1,4 +1,13 @@
 .Question-name {
     color: darkcyan;
     margin-top: 90px;
+    margin: 40px;
+}
+
+/* Mobile View  */
+@media screen and (max-width: 576px) {
+    .Question-name {
+        color: darkcyan;
+
+    }
 }

@@ -46,3 +46,5 @@
     color: darkcyan;
 
 }
+
+* Mobile View */ @media screen and (max-width: 576px) {}

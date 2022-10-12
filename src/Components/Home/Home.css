@@ -7,6 +7,11 @@
 
 }
 
+.color {
+    color: darkcyan;
+    margin-top: 60px;
+}
+
 /* Tab View */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .quiz-container {
@@ -23,6 +28,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 0px;
+        margin-top: 40px;
 
 
     }
