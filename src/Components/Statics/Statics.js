@@ -33,24 +33,26 @@ const Statics = () => {
         <div>
             <h1 className='h1'>Chart Of Quick Quiz</h1>
             <div className='chart'>
-                <AreaChart
-                    width={600}
-                    height={400}
-                    data={axises}
-                    margin={{
-                        top: 10,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Area type="monotone" dataKey="Total" stroke="black" fill="darkcyan" />
-                </AreaChart>
+                <ResponsiveContainer width="95%" height={400}>
+                    <AreaChart
+                        width={600}
+                        height={400}
+                        data={axises}
+                        margin={{
+                            top: 10,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Area type="monotone" dataKey="Total" stroke="black" fill="darkcyan" />
+                    </AreaChart>
 
+                </ResponsiveContainer>
             </div>
         </div>
     );
