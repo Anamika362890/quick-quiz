@@ -10,6 +10,8 @@ const Option = ({ option, correctAnswer }) => {
     const handleClickButton = () => {
         if (option === correctAnswer) {
             toast('Correct Answer');
+
+
         }
         else {
             toast('Wrong Answer');

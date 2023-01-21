@@ -8,7 +8,7 @@ const QuizDetails = () => {
     const questionInfo = question.data;
     const questionsAll = question.data.questions;
     const questionOption = question.data.options;
-    console.log(question.data.questions);
+
     const { total, name } = questionInfo;
 
     return (
