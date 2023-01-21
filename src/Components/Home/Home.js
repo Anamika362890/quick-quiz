@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h2 className='color'>Select a Quiz Topic From Here</h2>
+            <h2 className='color'>Select a Quiz Topic From Here :</h2>
             <div className='quiz-container'>
 
                 {
